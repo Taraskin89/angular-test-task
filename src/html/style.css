@@ -1,0 +1,66 @@
+#main{
+    display: flex;
+    flex-direction: row;
+}
+#menu{
+    width:220px;
+    height: auto;
+    background-color: #f8f8f8;
+    border-top: none;
+    border: 1px solid transparent;
+    border-color: #e7e7e7;
+}
+#menu ul{
+    margin-top: 40px;
+}
+.navbar{
+    margin-bottom: 0;
+}
+#content{
+    width: 100%;
+    height: auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+input{
+    width: 455px;
+    height: 40px;
+    margin: 10px;
+    padding: 0 10px 0 10px;
+}
+
+label{
+    width: 100px;
+}
+.thumbnail{
+    margin-top: 15px;
+}
+.album-item{
+    height: 260px;
+}
+.albums-list{
+    padding-top: 10px;
+}
+.albums-list h2{
+
+    text-align: center;
+}
+.albums-list-control{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 100px;
+}
+
+#year, #price{
+    width: 160px;
+}
+.form-edit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

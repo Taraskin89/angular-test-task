@@ -1,0 +1,31 @@
+<div class="jumbotron form-edit alert alert-warning" >
+    <h2>Edit Your album here.</h2>
+    <hr/>
+    <form name="editAlbum ">
+        <div>
+            <label for="title">Title</label>
+            <input type="text" ng-model="title" id="title" required/>
+        </div>
+        <div>
+            <label for="artist"> Artist</label>
+            <input type="text" ng-model="artist" id="artist" placeholder="artist" required/>
+        </div>
+        <div>
+            <label for="country">Country </label>
+            <input type="text" ng-model="country" id="country" placeholder="country" required/>
+        </div>
+        <div>
+            <label for="company">Company</label>
+            <input type="text" ng-model="company" id="company" placeholder="company" required/>
+        </div>
+        <div>
+            <label for="price">Price</label>
+            <input type="text" ng-model="price" id="price" placeholder="price" ng-pattern="/^[0-9]*$/" required/>
+
+            <label for="year">Year</label>
+            <input type="text" ng-model="year" id="year" placeholder="year" ng-pattern="/^[0-9]*$/" required/>
+        </div>
+
+        <a class="btn btn-primary" ng-click="updateAlbum()" href="#albums/all" ng-disabled = "!editAlbum.$valid" role="button">SAVE Changes</a>
+    </form>
+</div>
